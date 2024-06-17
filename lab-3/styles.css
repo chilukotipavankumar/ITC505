@@ -1,0 +1,47 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    
+    position:absolute;
+    left:20%;
+    top:14%;
+}
+
+.Custom {
+    font-family: 'Zeyada', cursive;
+    font-weight: 700;
+    font-size: 3em;
+    position:absolute;
+    top:-5%;
+    left:30%;
+    
+    color: #333;
+}
+
+p, ol {
+    font-family: 'Zeyada', cursive;
+    font-size: 1.2em;
+    text-align: center;
+    color: black;
+}
+
+.footer p {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    text-align: center;
+    color: #888;
+    
+    background-color: #f9f9f9;
+    
+}
