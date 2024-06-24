@@ -1,0 +1,73 @@
+/* style.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f9f9f9; /* Light background for reduced eye strain */
+    color: #333333; /* Dark gray text for readability */
+}
+
+/* Center Content */
+.center-content {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Heading Styles */
+h1 {
+    text-align: center;
+    font-size: 32px; /* Emphasize the main title */
+    font-weight: bold; /* Make the title stand out */
+    color: #1a1a1a; /* Slightly darker gray for prominence */
+}
+
+h2 {
+    text-align: left;
+    font-size: 24px; /* Clear distinction for sections */
+    margin-top: 30px; /* Extra space above sections */
+    margin-bottom: 15px; /* Space below headings for separation */
+    color: #1a1a1a; /* Consistent color with the main title */
+}
+
+/* Article Styles */
+article {
+    margin-bottom: 40px; /* Ensuring space between sections */
+    background-color: #ffffff; /* White background for clarity */
+    padding: 15px; /* Padding for internal spacing */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* List Styles */
+ul {
+    padding-left: 40px; /* Indenting list items for readability */
+    margin-bottom: 20px; /* Space below lists for separation */
+}
+
+li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    margin-top: 40px; /* Space above footer */
+    font-size: 14px; /* Smaller font for less prominent text */
+    color: #666666; /* Lighter gray for footer text */
+    background-color: #ffffff; /* White background for clarity */
+    padding: 10px; /* Padding for internal spacing */
+    border-top: 2px solid #e0e0e0; /* Light border on top for separation */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 0 0 8px 8px; /* Rounded bottom corners for a cohesive look */
+}
+
+/* Additional Styles */
+p {
+    margin-bottom: 20px; /* Space below paragraphs */
+}
+
+strong {
+    color: #000000; /* Bold text in black for emphasis */
+}
