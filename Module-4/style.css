@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(255,255,255,0.5) 0%, rgba(0,0,0,0.5) 100%);
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: #0096D5;
+}
+
+#rocket {
+    animation-name: popup;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+#flame {
+    animation-name: shake;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#cloud1 {
+    animation-name: fall;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#cloud2 {
+    animation-name: fall-2;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#cloud3 {
+    animation-name: fall-3;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#cloud4 {
+    animation-name: fall-4;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes popup {
+    0% { transform: translate(50vw, 50vh); }
+    50% { transform: translate(50vw, 54vh); }
+    100% { transform: translate(50vw, 50vh); }
+}
+
+@keyframes fall {
+    from { transform: translateY(-100px); }
+    to { transform: translateY(100vh); }
+}
+
+@keyframes fall-2 {
+    from { transform: translate(200px, -100px); }
+    to { transform: translate(200px, 100vh); }
+}
+
+@keyframes fall-3 {
+    from { transform: translate(400px, -100px); }
+    to { transform: translate(400px, 100vh); }
+}
+
+@keyframes fall-4 {
+    from { transform: translate(500px, -400px); }
+    to { transform: translate(500px, 100vh); }
+}
+
+@keyframes shake {
+    0% { transform: translate(55px, 135px) rotate(7deg); }
+    20% { transform: translate(55px, 135px) rotate(0deg); }
+    40% { transform: translate(55px, 135px) rotate(-7deg); }
+    60% { transform: translate(55px, 135px) rotate(0deg); }
+    100% { transform: translate(55px, 135px) rotate(0deg); }
+}
+
+h3 {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 24px;
+    color: #FFF;
+    z-index: 1;
+}
