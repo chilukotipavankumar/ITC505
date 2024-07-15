@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 6 - Holy Grail Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h3>Timezone Calculator</h3>
+    </header>
+    
+    <div class="grid-container">
+        <aside class="menu-sidebar">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </aside>
+        
+        <main class="main-content">
+            <div id="problem-solver">
+                <h2>JavaScript Problem Solver</h2>
+                
+                <div id="localTime"></div>
+                <label for="timezoneSelect">Select Timezone:</label>
+                <select id="timezoneSelect">
+                    <option value="0">Select Timezone</option>
+                    <option value="1">Europe/Paris (UTC+1)</option>
+                    <option value="9">Asia/Tokyo (UTC+9)</option>
+                    <option value="5.5">Asia/Kolkata (UTC+5:30)</option>
+                </select>
+                <div id="selectedTime"></div>
+            </div>
+        </main>
+        
+        <aside class="advertisement">
+            <a href="https://a.co/d/9hLS9vo/" target="_blank">
+                <img src="image.jpg" alt="Advertisement Image" style="width: 100%; height: auto;">
+            </a>
+            
+                <a href="https://a.co/d/9hLS9vo/" target="_blank" class="click-here-button">Click Here</a>
+            
+        </aside>
+        
+    </div>
+    
+    <footer>
+        <p>Addendum: This page demonstrates the Holy Grail Layout using CSS Grid. It includes a timezone calculator implemented in JavaScript. The JavaScript function calculates and displays the local time and the selected timezone time based on user input.</p>
+           
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+</html>

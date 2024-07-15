@@ -1,0 +1,126 @@
+/* Reset and basic styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px; /* Sidebar, Main Content, Advertisement */
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-sidebar {
+    background-color: #555;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.menu-sidebar h2 {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.menu-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-sidebar ul li {
+    margin-bottom: 5px;
+}
+
+.menu-sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 0.5em;
+    transition: background-color 0.3s ease;
+}
+
+.menu-sidebar ul li a:hover {
+    background-color: #777;
+}
+
+.main-content {
+    background-color: #f9f9f9;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.advertisement {
+    background-color: #555;
+    padding: 1em;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.advertisement img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+}
+
+.advertisement {
+    background-color: #555;
+    padding: 1em;
+    text-align: center;
+    border-radius: 5px;
+    position: relative; /* Ensure relative positioning for absolute button */
+}
+
+.advertisement img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.button-container {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.click-here-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.click-here-button:hover {
+    background-color: #45a049;
+}
