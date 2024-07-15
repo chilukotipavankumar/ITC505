@@ -10,19 +10,25 @@
     <header>
         <h1>Detective Game</h1>
     </header>
-    <main>
+    <div class="content">
         <div id="game-container">
             <div id="story-image"></div>
             <div id="story-text"></div>
             <div id="choices"></div>
         </div>
-    </main>
-    <script src="game.js"></script>
-  <footer>
+    </div>
+    <footer>
+        <p class="addendum"><strong>Addendum: </strong>
+The development of the Detective Game project involved a structured approach aimed at creating an immersive and interactive narrative experience. Initially, we focused on crafting a compelling storyline that would immerse players in the role of a detective solving complex mysteries. This included conceptualizing characters, plot twists, and gameplay scenarios that would challenge players' deductive skills.
+Key design choices included the use of HTML for semantic structure, CSS for visual presentation, and JavaScript for dynamic content and interactive elements. The div choices element was strategically placed to offer players pivotal decisions that influence the storyline, fostering engagement and critical thinking.
+Technically, meta tags like meta charset="UTF-8" and meta name="viewport" content="width=device-width, initial-scale=1.0" ensured optimal performance and responsiveness across various devices. The footer section, featuring a dynamically updated lastModified timestamp, underscored our commitment to ongoing development and transparency.
+Looking forward, the project is poised for iterative improvements, including expanding narratives and refining gameplay mechanics based on user feedback. This approach not only enhances the game's replayability but also ensures a seamless blend of storytelling and interactive gameplay that captivates players from start to finish.
+</p>
         <p>Last updated: 
             <span id="lastModified"></span>
         </p>
     </footer>
+    <script src="game.js"></script>
     <script type="text/javascript">
          var x = document.lastModified;
          document.getElementById('lastModified').textContent = x;
