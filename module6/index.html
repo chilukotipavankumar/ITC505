@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Pavan's Online Store</h1>
+    </header>
+    <main>
+        <section id="products">
+            <h2>Products</h2>
+            <div class="product" data-id="1">
+                <h3>HDMI CABLE</h3>
+                <p>$10.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="2">
+                <h3>LAN CABLE</h3>
+                <p>$20.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="3">
+                <h3>128GB SSD</h3>
+                <p>$300.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+        <section id="cart">
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: $<span id="total">0.00</span></p>
+            <button id="checkout">Checkout</button>
+        </section>
+        <section id="subscribe">
+            <h2>Subscribe to Our Newsletter</h2>
+            <form id="subscribe-form">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
