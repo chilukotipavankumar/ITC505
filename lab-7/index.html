@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mad Lib</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1>Mad Lib</h1>
+  <hr>
+  <h2>Mad Lib Instructions</h2>
+  <form id="mad-lib-form" method="post" action="">
+    <div class="form-group">
+      <label for="plural-noun">Plural Noun:</label>
+      <input id="plural-noun" type="text" name="pluralNoun" required>
+    </div>
+    <div class="form-group">
+      <label for="adjective">Adjective:</label>
+      <input id="adjective" type="text" name="adjective" required>
+    </div>
+    <div class="form-group">
+      <label for="verb">Present Tense Verb:</label>
+      <input id="verb" type="text" name="verb" required>
+    </div>
+    <div class="form-group">
+      <label for="noun">Noun:</label>
+      <input id="noun" type="text" name="noun" required>
+    </div>
+    <div class="form-group">
+      <label for="conjunction">Conjunction:</label>
+      <input id="conjunction" type="text" name="conjunction" required>
+    </div>
+    <button id="mad-lib-btn" type="submit">Submit</button>
+  </form>
+  <hr>
+  <h2>Mad Lib Results</h2>
+  <p id="result"></p>
+  <div>
+    <h3>Addendum</h3>
+    <ul>
+      <li>
+        <strong>Event Listener for DOMContentLoaded:</strong>
+        Ensures JavaScript executes after all HTML content is loaded.
+      </li>
+      <li>
+        <strong>Variables:</strong>
+        Store references to HTML elements for interaction.
+      </li>
+      <li>
+        <strong>Form Submission Event Listener:</strong>
+        Listens for form submission, prevents default behavior, and constructs a story.
+      </li>
+      <li>
+        <strong>Form Data Retrieval and Story Construction:</strong>
+        Gathers form data and constructs a story using template literals.
+      </li>
+      <li>
+        <strong>Handling Fetch Response:</strong>
+        Updates the result area with the generated Mad Lib story.
+      </li>
+    </ul>
+  </div>
+  <footer>
+    <p>Last updated:
+      <span id="lastModified"></span>
+    </p>
+  </footer>
+  
+  <script src="script.js"></script>
+  <script>
+    var x = document.lastModified;
+    document.getElementById('lastModified').textContent = x;
+  </script>
+</body>
+
+</html>
