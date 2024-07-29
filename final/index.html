@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lights Out</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Lights Out</h1>
+        </header>
+        
+        <main>
+            <div id="game-board"></div>
+            
+            <button id="start-game">Let's Play</button>
+            
+            <div id="addendum">
+                <h2>Addendum</h2>
+                <p><strong>Process:</strong> Developing this "Lights Out" game involved several steps. Initially, I set up the game board using HTML and CSS. The grid was designed as a 5x5 matrix to provide a clear and manageable puzzle. JavaScript was used to handle the game logic, including toggling the lights and checking for a win condition. The board was randomized to ensure a different, solvable puzzle each time the game was loaded.</p>
+                <p><strong>Creative Choices:</strong> The design focuses on simplicity to ensure a smooth user experience. The game board is centered on the page, and each square is styled with contrasting colors to clearly indicate its state. A subtle click sound was added to enhance interaction feedback. The layout and style aim to keep the game visually appealing while emphasizing functionality.</p>
+                <p><strong>Challenges:</strong> One significant challenge was ensuring the game board configurations are always solvable. This was tackled by starting with an all-off board and applying a limited number of random moves, which was tested to ensure that the board configuration remains solvable. Another challenge was balancing the difficulty level of the puzzle so it remains engaging without being too frustrating.</p>
+                <p><strong>Insights:</strong> This project provided insights into balancing game design elements such as difficulty and user engagement. It highlighted the importance of clear visual feedback and the need for a well-thought-out randomization strategy. The experience reinforced the value of iterative testing and user feedback in game development.</p>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Last updated: 
+                <span id="lastModified"></span>
+            </p>
+        </footer>
+    </div>
+    
+    <audio id="click-sound" src="click.mp3"></audio>
+    <script src="script.js"></script>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+</html>
