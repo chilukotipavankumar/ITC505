@@ -12,9 +12,9 @@ document.addEventListener("DOMContentLoaded", function () {
             for (let j = 0; j < boardSize; j++) {
                 const square = document.createElement("div");
                 square.classList.add("square");
-                // Initially all squares are white, so no need to add the is-off class
                 square.dataset.row = i;
                 square.dataset.col = j;
+                 // Add a unique ID for each square
                 square.addEventListener("click", () => {
                     toggleSquare(i, j);
                     playSound();
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function checkWin() {
         const allOff = board.flat().every(square => square.classList.contains("is-off"));
         if (allOff) {
-            setTimeout(() => window.alert("You win!"), 100);
+            alert("You win!"); // Direct alert to avoid timing issues
         }
     }
 
