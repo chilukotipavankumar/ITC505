@@ -40,23 +40,26 @@ h1 {
     display: grid;
     grid-template-columns: repeat(5, 60px);
     grid-template-rows: repeat(5, 60px);
-    gap: 1px;
+    gap: 2px; /* Increase gap to make lines more visible */
     margin: 20px;
-    background-color:olive;
+    background-color: #fff; /* Background color of gaps */
 }
 
 .square {
     width: 60px;
     height: 60px;
-    background-color:white;
-    border: 2px solid #000;
+    background-color: white; /* Default state is white */
+    border: 1px solid #ccc; /* Light border for distinction */
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3); /* Optional: Add shadow for better visibility */
     cursor: pointer;
-    transition: background-color 0.2s;
+    transition: background-color 0.2s, border-color 0.2s;
 }
 
 .square.is-off {
-    background-color: black;
+    background-color: black; /* Off state is black */
 }
+
+
 
 #addendum {
     margin-top: 30px;
@@ -76,4 +79,12 @@ footer {
     padding: 20px;
     background-color: #444;
     border-radius: 8px;
+}
+
+.square::before {
+    content: attr(id); /* Display ID for debugging */
+    display: block;
+    font-size: 10px;
+    color: black;
+    text-align: center;
 }
